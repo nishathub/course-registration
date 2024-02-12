@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.imgur.com/vhRFniu.png",
+    "title": "Data Structure",
+    "description": "Explore essential data structures for efficient problem-solving, enhancing algorithmic thinking. Organize and store data effectively in various scenarios.",
+    "price": 25000,
+    "credit_hour": 3
+  },
+  {
+    "id": 2,
+    "image": "https://i.imgur.com/4j3yWXw.png",
+    "title": "Software Engineering",
+    "description": "Master coding, testing, and software development principles. Enhance skills to build robust and scalable software solutions for diverse applications.",
+    "price": 18000,
+    "credit_hour": 2
+  },
+  {
+    "id": 3,
+    "image": "https://i.imgur.com/UlEXL3e.png",
+    "title": "Python",
+    "description": "Dive into Python's syntax, data structures, and application development. Acquire versatile programming skills applicable in various domains and projects.",
+    "price": 12000,
+    "credit_hour": 1
+  },
+  {
+    "id": 4,
+    "image": "https://i.imgur.com/UNXdqHk.png",
+    "title": "Problem Solving",
+    "description": "Develop effective problem-solving skills through engaging exercises. Sharpen analytical thinking to tackle complex challenges efficiently and creatively.",
+    "price": 30000,
+    "credit_hour": 4
+  },
+  {
+    "id": 5,
+    "image": "https://i.imgur.com/Qxn2dNh.png",
+    "title": "Computer Programming",
+    "description": "Master programming fundamentals: languages, algorithms, and data structures. Build efficient and reliable software solutions for diverse applications and industries.",
+    "price": 22000,
+    "credit_hour": 3
+  },
+  {
+    "id": 6,
+    "image": "https://i.imgur.com/leWkyTz.png",
+    "title": "C++",
+    "description": "Deepen C++ knowledge with object-oriented programming and advanced features. Gain expertise in memory management for developing efficient and powerful applications.",
+    "price": 15000,
+    "credit_hour": 2
+  },
+  {
+    "id": 7,
+    "image": "https://i.imgur.com/4R0fVB7.png",
+    "title": "Algorithm",
+    "description": "Explore algorithms and optimize code efficiency. Master foundational problem-solving techniques for tackling diverse challenges in coding and software development.",
+    "price": 28000,
+    "credit_hour": 4
+  },
+  {
+    "id": 8,
+    "image": "https://i.imgur.com/6zfr1tN.png",
+    "title": "AWS-Cloud Computing",
+    "description": "Delve into Cloud Computing with AWS. Learn to deploy scalable and fault-tolerant systems for powerful cloud-based solutions in a variety of applications.",
+    "price": 20000,
+    "credit_hour": 3
+  },
+  {
+    "id": 9,
+    "image": "https://i.imgur.com/k9YgjBa.png",
+    "title": "Database (MySQL)",
+    "description": "Master database management with MySQL. Learn design, SQL queries, and administration for building robust and efficient databases in various projects.",
+    "price": 25000,
+    "credit_hour": 3
+  }
+]
