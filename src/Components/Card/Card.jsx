@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 const Card = ({data, handleSelect}) => {
    const {image, title, description, price, credit_hour} = data;
-    console.log(data);
     return (
         <div className='flex flex-col justify-between gap-4 text-left p-4 bg-slate-400 rounded-lg'>
             <div>
@@ -22,7 +21,7 @@ const Card = ({data, handleSelect}) => {
                     <p>Credit : {credit_hour}hr</p>
                 </div>
             </div>
-            <button onClick={() => handleSelect(price, credit_hour)} className='bg-blue-500 hover:bg-blue-700 rounded-md text-white py-1'>Select</button>
+            <button onClick={() => handleSelect(price, credit_hour, title)} className='bg-blue-500 hover:bg-blue-700 rounded-md text-white py-1'>Select</button>
         </div>
     );
 };

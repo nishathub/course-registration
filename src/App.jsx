@@ -4,23 +4,29 @@ import './App.css'
 import Cards from './Components/Card/Cards';
 import Cart from './Components/Cart/Cart';
 
+let newSelection = [];
 function App() {
 
   const [creditRemain, setCreditRemain] = useState(20);
   const [totalCredit, setTotalCredit] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [selection, setSelection] = useState([]);
 
-  const handleSelect = (price, credit) => {
-    console.log(price, credit);
+  const handleSelect = (price, credit, title) => {
+    console.log(price, credit, title);
     const creditDue = creditRemain - credit;
     const creditSum = totalCredit + credit;
     const priceSum = price + totalPrice;
-    if (creditDue < 0){
-      alert('Credit limit exceed')
-    } else{
-      setCreditRemain(creditDue);
-      setTotalCredit(creditSum);
-      setTotalPrice(priceSum);
+    if(!newSelection.includes(title)){
+      newSelection.push(title);
+      setSelection(newSelection);
+      if (creditDue < 0){
+        alert('Credit limit exceed')
+      } else{
+        setCreditRemain(creditDue);
+        setTotalCredit(creditSum);
+        setTotalPrice(priceSum);
+      }
     }
   }
  
@@ -32,7 +38,7 @@ function App() {
      </div>
      <div className='grid grid-cols-12 gap-4'>
     <Cards handleSelect = {handleSelect}></Cards>
-     <Cart dueCredit = {creditRemain} creditSum = {totalCredit} priceSum = {totalPrice}></Cart>
+     <Cart dueCredit = {creditRemain} creditSum = {totalCredit} priceSum = {totalPrice} selection = {selection}></Cart>
      </div>
 
     </>
