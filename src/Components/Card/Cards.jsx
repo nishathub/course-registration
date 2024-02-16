@@ -13,8 +13,10 @@ const Cards = () => {
     }, [])
 
     return (
+        <div className='col-span-9'>
         <div className='grid grid-cols-3 gap-4'> 
             {courses.map((course, id) => <Card key={id} data = {course}></Card>)}
+        </div>
         </div>
     );
 };

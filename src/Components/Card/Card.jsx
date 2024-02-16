@@ -4,7 +4,7 @@ const Card = ({data}) => {
    const {image, title, description, price, credit_hour} = data;
     console.log(data);
     return (
-        <div className='flex flex-col gap-4 text-left w-auto'>
+        <div className='flex flex-col justify-between gap-4 text-left p-4 bg-slate-400 rounded-lg'>
             <div>
                 <img className='w-full' src= {image} alt="course_image" />
             </div>
@@ -22,7 +22,7 @@ const Card = ({data}) => {
                     <p>Credit : {credit_hour}hr</p>
                 </div>
             </div>
-            <button>Select</button>
+            <button className='bg-blue-500 hover:bg-blue-700 rounded-md text-white py-1'>Select</button>
         </div>
     );
 };
