@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Card = ({data}) => {
+const Card = ({data, handleSelect}) => {
    const {image, title, description, price, credit_hour} = data;
     console.log(data);
     return (
@@ -22,13 +22,14 @@ const Card = ({data}) => {
                     <p>Credit : {credit_hour}hr</p>
                 </div>
             </div>
-            <button className='bg-blue-500 hover:bg-blue-700 rounded-md text-white py-1'>Select</button>
+            <button onClick={() => handleSelect(price, credit_hour)} className='bg-blue-500 hover:bg-blue-700 rounded-md text-white py-1'>Select</button>
         </div>
     );
 };
 
 Card.propTypes = {
-    data: PropTypes.object
+    data: PropTypes.object,
+    handleSelect: PropTypes.func
 }
 
 export default Card;
