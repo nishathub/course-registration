@@ -3,6 +3,8 @@ import { useState } from 'react';
 import './App.css'
 import Cards from './Components/Card/Cards';
 import Cart from './Components/Cart/Cart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 let newSelection = [];
 function App() {
@@ -18,13 +20,15 @@ function App() {
     const creditSum = totalCredit + credit;
     const priceSum = price + totalPrice;
     if(newSelection.includes(title)){
-      alert('Course is already taken')
+      // alert('Course is already taken')
+      toast('Course is already taken')
+
     }
     else{
       newSelection.push(title);
       setSelection(newSelection);
       if (creditDue < 0){
-        alert('Credit limit exceed')
+        toast('Credit limit exceed')
       } else{
         setCreditRemain(creditDue);
         setTotalCredit(creditSum);
@@ -42,6 +46,7 @@ function App() {
      <div className='grid sm:grid-cols-12 grid-cols-1 gap-4'>
     <Cards handleSelect = {handleSelect}></Cards>
      <Cart dueCredit = {creditRemain} creditSum = {totalCredit} priceSum = {totalPrice} selection = {selection}></Cart>
+     <ToastContainer/>
      </div>
 
     </>
