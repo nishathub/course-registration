@@ -36,7 +36,7 @@ function App() {
      <div className='mb-6'>
       <h1 className='text-xl font-bold'>Course Registration</h1>
      </div>
-     <div className='grid grid-cols-12 gap-4'>
+     <div className='grid sm:grid-cols-12 grid-cols-1 gap-4'>
     <Cards handleSelect = {handleSelect}></Cards>
      <Cart dueCredit = {creditRemain} creditSum = {totalCredit} priceSum = {totalPrice} selection = {selection}></Cart>
      </div>
