@@ -1,23 +1,25 @@
 import PropTypes from 'prop-types';
+import { FiDollarSign } from "react-icons/fi";
+import { LuBookOpen } from "react-icons/lu";
 
 const Card = ({data, handleSelect}) => {
    const {image, title, description, price, credit_hour} = data;
     return (
-        <div className='flex flex-col justify-between gap-4 text-left p-4 bg-slate-400 rounded-lg'>
+        <div className='flex flex-col justify-between gap-4 text-left p-4 bg-sky-200 rounded-lg'>
             <div>
                 <img className='w-full' src= {image} alt="course_image" />
             </div>
             <div>
-                <h2>{title}</h2>
+                <h2 className='text-lg font-bold mb-2'>{title}</h2>
                 <p>{description}</p>
             </div>
             <div className='flex justify-between'>
-                <div className='flex gap-4'>
-                    <p>icon</p>
+                <div className='flex gap-2 items-center font-semibold'>
+                    <p><FiDollarSign /></p>
                     <p>Price : {price}</p>
                 </div>
-                <div className='flex gap-4'>
-                    <p>icon</p>
+                <div className='flex gap-2 items-center font-semibold'>
+                    <p><LuBookOpen /></p>
                     <p>Credit : {credit_hour}hr</p>
                 </div>
             </div>

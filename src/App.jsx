@@ -34,7 +34,7 @@ function App() {
   return (
     <>
      <div className='mb-6'>
-      <h1 className='text-xl font-bold'>Course Registration</h1>
+      <h1 className='text-3xl font-bold'>Course Registration</h1>
      </div>
      <div className='grid sm:grid-cols-12 grid-cols-1 gap-4'>
     <Cards handleSelect = {handleSelect}></Cards>

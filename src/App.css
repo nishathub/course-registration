@@ -3,9 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: sans-serif;
 }
 body{
-  background-color: grey;
+  background-color: rgb(142, 178, 189);
 }
 
 .logo {

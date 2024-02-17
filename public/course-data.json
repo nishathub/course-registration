@@ -18,7 +18,7 @@
   {
     "id": 3,
     "image": "https://i.imgur.com/UlEXL3e.png",
-    "title": "Python",
+    "title": "Python Platoon",
     "description": "Dive into Python's syntax, data structures, and application development. Acquire versatile programming skills applicable in various domains and projects.",
     "price": 12000,
     "credit_hour": 1
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "image": "https://i.imgur.com/leWkyTz.png",
-    "title": "C++",
+    "title": "Basic C++ Understanding",
     "description": "Deepen C++ knowledge with object-oriented programming and advanced features. Gain expertise in memory management for developing efficient and powerful applications.",
     "price": 15000,
     "credit_hour": 2
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "image": "https://i.imgur.com/4R0fVB7.png",
-    "title": "Algorithm",
+    "title": "Introduction to Algorithm",
     "description": "Explore algorithms and optimize code efficiency. Master foundational problem-solving techniques for tackling diverse challenges in coding and software development.",
     "price": 28000,
     "credit_hour": 4
