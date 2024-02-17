@@ -17,7 +17,10 @@ function App() {
     const creditDue = creditRemain - credit;
     const creditSum = totalCredit + credit;
     const priceSum = price + totalPrice;
-    if(!newSelection.includes(title)){
+    if(newSelection.includes(title)){
+      alert('Course is already taken')
+    }
+    else{
       newSelection.push(title);
       setSelection(newSelection);
       if (creditDue < 0){
